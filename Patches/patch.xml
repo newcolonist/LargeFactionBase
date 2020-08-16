@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RuleDef[defName="BasePart_Indoors_Leaf"]/resolvers</xpath>
+    <value>
+      <li Class="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom2">
+        <minRectSize>(4, 4)</minRectSize>
+        <selectionWeight>0.6</selectionWeight>
+      </li>
+	</value>	
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RuleDef[defName="BasePart_Indoors_Leaf"]/resolvers</xpath>
+    <value>
+      
+	<li Class="SymbolResolver_BasePart_Indoors_Leaf_BatteryRoom2">
+        <minRectSize>(4, 4)</minRectSize>
+		        <selectionWeight>8</selectionWeight>
+    </li>
+
+    </value>	
+    </Operation>  
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RuleDef[defName="BasePart_Indoors_Leaf"]/resolvers</xpath>
+    <value>
+      
+	<li Class="SymbolResolver_BasePart_Indoors_Leaf_PrisonCell2">
+        <minRectSize>(4, 4)</minRectSize>
+    </li>
+
+    </value>
+    </Operation>
+	
+	    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RuleDef[defName="BasePart_Indoors_Leaf"]/resolvers</xpath>
+    <value>
+      
+	<li Class="SymbolResolver_BasePart_Indoors_Leaf_Storage">
+	                <minRectSize>(3, 3)</minRectSize>
+	        <selectionWeight>2</selectionWeight>
+    </li>
+
+    </value>	
+    </Operation>
+	
+		    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RuleDef[defName="BasePart_Indoors_Leaf"]/resolvers</xpath>
+    <value>
+	      <li Class="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom">
+        <minRectSize>(5, 5)</minRectSize>
+        <selectionWeight>0.75</selectionWeight>
+      </li>
+	      </value>	
+    </Operation>
+	  
+</Patch>

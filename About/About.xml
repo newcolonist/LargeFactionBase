@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Large Faction Bases</name>
+	<author>newcolonist</author>
+	<url>https://ludeon.com/forums/index.php?topic=39107.0</url>
+	<supportedVersions>
+      <li>1.0</li>
+	  <li>1.1</li>
+	  <li>1.2</li>
+    </supportedVersions>
+	<targetVersion>1.2.2723</targetVersion>
+    <packageId>newcolonist.largefactionbases</packageId>
+	<description>
+Generate larger faction bases. Their size and manpower evolve with time. It also factors in the difficulty level, and some randomness.
+
+Save game compatible.
+
+With Powerful Faction Bases, it's either/or, same for any mod which changes faction base generation.
+</description>
+</ModMetaData>
