@@ -18,7 +18,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\1.2\Assemblies\</OutputPath>
+    <OutputPath>..\1.3\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,6 +34,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Lord-of-the-Rims---Dwarves-master\Source\Dependencies\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -307,6 +310,8 @@
     <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom2.cs" />
     <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom3.cs" />
     <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_PrisonCell2.cs" />
+    <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_Storage2.cs" />
+    <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_Storage.cs" />
     <Compile Include="SymbolResolver_Corpse.cs" />
     <Compile Include="SymbolResolver_Corpse2.cs" />
     <Compile Include="SymbolResolver_Corpse3.cs" />
@@ -336,7 +341,9 @@
     <Compile Include="SymbolResolver_MedicalBed.cs" />
     <Compile Include="SymbolResolver_MedicalPrisonerBed.cs" />
     <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_Hospital.cs" />
+    <Compile Include="SymbolResolver_MiniT.cs" />
     <Compile Include="SymbolResolver_PlaceHumanLeatherArmchair.cs" />
+    <Compile Include="SymbolResolver_PrisonDefense.cs" />
     <Compile Include="SymbolResolver_RandomlyPlaceDrugOnTable.cs" />
     <Compile Include="SymbolResolver_RandomlyPlaceHumanMeat.cs" />
     <Compile Include="SymbolResolver_RandomlyPlaceJointOnTables.cs" />

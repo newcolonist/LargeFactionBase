@@ -95,7 +95,46 @@ namespace LargeFactionBase
                 {
                     //1.0 PawnGenerationRequest value = new PawnGenerationRequest(faction.RandomPawnKind(), faction, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, null, null, null, null, null, null, null, null);
 
-                    PawnGenerationRequest value = new PawnGenerationRequest(faction.RandomPawnKind(), faction, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, true, false, false, false, false, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null);
+                                        PawnGenerationRequest value = new PawnGenerationRequest(faction.RandomPawnKind(), // KindDef
+                    faction, //Faction
+                    PawnGenerationContext.NonPlayer,  //Context 
+                    -1, //Tile
+                    false, //ForceGenerateNewPawn
+                    false, //Newborn
+                    false, //AllowDead 
+                    false, //AllowDowned
+                    false, //CanGeneratePawnRelations
+                    true, //MustBeCapaleOfViolence 
+                    1f, //ColonistRelationChanceFactor
+                    true, // ForceAddFreeWarmLayerIfNeeded
+                    true, //AllowGay 
+                    true, //AllowFood
+                    true, //AllowAddiction
+                    false, //Inhabitant
+                    false, //CertainlyBeenInCryptoSleep
+                    false, //ForceRedressWorldPawnIfFormerColonist
+                    false, //WorldPawnFactionDoesntMatter
+                    0f, //BioCodeWeaponChance
+                    0f, //BioCodeApparelChance
+                    null, //ExtraPawnForExtraRelationChance 
+                    1f, //RelationWithExtraPawn
+                    null, //ValidatorPreGear 
+                    null, //ValidatorPostGear
+                    null, //forcedTraits  
+                    null, //ProhibitedTraits
+                    null, //minChanceToRedressWorldPawn 
+                    null, //FixedBiologicalAge
+                    null, //FixedChronologicalAge
+                    null, //FixedGender
+                    null, //FixedMelanin
+                    null, //FixedLastName
+                    null, //FixedBirthName
+                    null, //FixedTitle
+                    null, //FixedIdeo
+                    false, //ForceNoIdeo
+                    false, //FordeNoBackstory
+                    false //ForbidAnyTitle
+                    );
 
                     ResolveParams rp2 = rp;
                     rp2.faction = faction;

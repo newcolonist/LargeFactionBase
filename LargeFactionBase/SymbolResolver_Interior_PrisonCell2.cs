@@ -51,6 +51,15 @@ namespace RimWorld.BaseGen
             {
                 BaseGen.symbolStack.Push("corpse2", rp);
             }*/
+            BaseGen.symbolStack.Push("prisonDefense", rp);
+            if (Rand.Value > 0.5f)
+            {
+                BaseGen.symbolStack.Push("prisonDefense", rp);
+            }
+            if (Rand.Value > 0.5f)
+            {
+                BaseGen.symbolStack.Push("prisonDefense", rp);
+            }
         }
     }
 }

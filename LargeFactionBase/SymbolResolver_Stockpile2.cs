@@ -11,7 +11,7 @@ namespace LargeFactionBase
     {
         private List<IntVec3> cells = new List<IntVec3>();
 
-        private const float FreeCellsFraction = 0.05f;
+        private const float FreeCellsFraction = 0.45f;
 
         public override void Resolve(ResolveParams rp)
         {
@@ -40,9 +40,9 @@ namespace LargeFactionBase
             }
             else
             {
-                this.CalculateFreeCells(rp.rect, 0.99995f);
+                this.CalculateFreeCells(rp.rect, 0.45f);
                 //ThingSetMakerDef thingSetMakerDef = rp.thingSetMakerDef ?? ThingSetMakerDefOf.MapGen_DefaultStockpile;
-                ThingSetMakerDef thingSetMakerDef = rp.thingSetMakerDef ?? LargeFactionBase_ThingSetMakerDefOf.MapGen_DefaultStockpile2;
+                ThingSetMakerDef thingSetMakerDef = rp.thingSetMakerDef ?? LargeFactionBase_ThingSetMakerDefOf.MapGen_DefaultStockpile3;
                 //ThingSetMakerDef thingSetMakerDef = LargeFactionBase_ThingSetMakerDefOf.MapGen_DefaultStockpile2;
                 ThingSetMakerParams? thingSetMakerParams = rp.thingSetMakerParams;
                 ThingSetMakerParams value;

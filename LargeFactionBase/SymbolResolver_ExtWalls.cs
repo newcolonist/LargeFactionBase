@@ -34,12 +34,17 @@ namespace LargeFactionBase
 
             CellRect cellRect = new CellRect(rp.rect.maxX, rp.rect.maxZ, 1, 1);
             resolveParams8.rect = cellRect.ExpandedBy(6);
+
+
             CellRect cellRect2 = new CellRect(rp.rect.minX, rp.rect.maxZ, 1, 1);
             resolveParams7.rect = cellRect2.ExpandedBy(6);
+
             CellRect cellRect3 = new CellRect(rp.rect.maxX, rp.rect.minZ, 1, 1);
             resolveParams9.rect = cellRect3.ExpandedBy(6);
+
             CellRect cellRect4 = new CellRect(rp.rect.minX, rp.rect.minZ, 1, 1);
             resolveParams10.rect = cellRect4.ExpandedBy(6);
+
 
             /*resolveParams21.rect = rp.rect.ContractedBy(12);
             CellRect cellRect6 = new CellRect(resolveParams21.rect.CenterCell.x, resolveParams21.rect.CenterCell.z, 1, 1);
@@ -202,13 +207,33 @@ namespace LargeFactionBase
             resolveParams11.rect = resolveParams11.rect.ContractedBy(2);
 
             {
-            BaseGen.symbolStack.Push("edgeWalls", resolveParams8);
+                BaseGen.symbolStack.Push("edgeWalls", resolveParams8);
                 ResolveParams resolveParams82 = resolveParams8;
                 resolveParams82.rect = resolveParams8.rect.ContractedBy(1); 
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams82);
                 ResolveParams resolveParams83 = resolveParams8;
                 resolveParams83.rect = resolveParams8.rect.ContractedBy(2);
-                BaseGen.symbolStack.Push("emptyRoom", resolveParams83);
+                BaseGen.symbolStack.Push("edgWalls", resolveParams83);
+
+                //ResolveParams resolveParams84 = resolveParams8;
+                //resolveParams84.rect = resolveParams8.rect.ContractedBy(3);
+                float rnd1 = Rand.Value;
+                if (rnd1 < 0.2f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell", resolveParams83);
+                }
+                else if (rnd1 >= 0.2f && rnd1 < 0.55f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell2", resolveParams83);
+                }
+                else if (rnd1 >= 0.55f && rnd1 < 0.9f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell3", resolveParams83);
+                }
+                else
+                {
+                    BaseGen.symbolStack.Push("storage2", resolveParams83);
+                }
 
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams7);
                 ResolveParams resolveParams72 = resolveParams7;
@@ -216,10 +241,27 @@ namespace LargeFactionBase
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams72);
                 ResolveParams resolveParams73 = resolveParams7;
                 resolveParams73.rect = resolveParams7.rect.ContractedBy(2);
-                BaseGen.symbolStack.Push("emptyRoom", resolveParams73);
+                BaseGen.symbolStack.Push("edgWalls", resolveParams73);
 
-
-
+                //ResolveParams resolveParams74 = resolveParams8;
+                //resolveParams74.rect = resolveParams8.rect.ContractedBy(3);
+                float rnd2 = Rand.Value;
+                if (rnd2 < 0.2f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell", resolveParams73);
+                }
+                else if (rnd2 >= 0.2f && rnd2 < 0.55f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell2", resolveParams73);
+                }
+                else if (rnd2 >= 0.55f && rnd2 < 0.9f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell3", resolveParams73);
+                }
+                else
+                {
+                    BaseGen.symbolStack.Push("storage2", resolveParams73);
+                }
 
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams9);
                 ResolveParams resolveParams92 = resolveParams9;
@@ -227,7 +269,23 @@ namespace LargeFactionBase
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams92);
                 ResolveParams resolveParams93 = resolveParams9;
                 resolveParams93.rect = resolveParams9.rect.ContractedBy(2);
-                BaseGen.symbolStack.Push("emptyRoom", resolveParams93);
+                float rnd3 = Rand.Value;
+                if (rnd3 < 0.2f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell", resolveParams93);
+                }
+                else if (rnd3 >= 0.2f && rnd3 < 0.55f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell2", resolveParams93);
+                }
+                else if (rnd3 >= 0.55f && rnd3 < 0.9f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell3", resolveParams93);
+                }
+                else
+                {
+                    BaseGen.symbolStack.Push("storage2", resolveParams93);
+                }
 
 
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams10);
@@ -236,11 +294,27 @@ namespace LargeFactionBase
                 BaseGen.symbolStack.Push("edgeWalls", resolveParams102);
                 ResolveParams resolveParams103 = resolveParams10;
                 resolveParams103.rect = resolveParams10.rect.ContractedBy(2);
-                BaseGen.symbolStack.Push("emptyRoom", resolveParams103);
+                float rnd4 = Rand.Value;
+                if (rnd4 < 0.2f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell", resolveParams103);
+                }
+                else if (rnd4 >= 0.2f && rnd4 < 0.55f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell2", resolveParams103);
+                }
+                else if (rnd4 >= 0.55f && rnd4 < 0.9f)
+                {
+                    BaseGen.symbolStack.Push("prisonCell3", resolveParams103);
+                }
+                else
+                {
+                    BaseGen.symbolStack.Push("storage2", resolveParams103);
+                }
             }
 
 
-                BaseGen.symbolStack.Push("edgeWalls3", resolveParams11);
+            BaseGen.symbolStack.Push("edgeWalls3", resolveParams11);
             
                 ResolveParams resolveParams15 = rp;
                 resolveParams15.rect = resolveParams11.rect.ContractedBy(1);

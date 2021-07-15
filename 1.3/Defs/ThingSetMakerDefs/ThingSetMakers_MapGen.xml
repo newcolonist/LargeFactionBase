@@ -14,7 +14,7 @@
         <qualityGenerator>Reward</qualityGenerator>
       </fixedParams>
       <options>
-	          <li>
+	    <li>
           <weight>0.6</weight>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
@@ -34,8 +34,8 @@
             <fixedParams>
               <filter>
                 <thingDefs>
-				  <li>PsychicInsanityLance</li>
-				  <li>PsychicShockLance</li>					  
+				  <li>Apparel_PsychicInsanityLance</li>
+				  <li>Apparel_PsychicShockLance</li>					  
 	              </thingDefs>
               </filter>
             </fixedParams>
@@ -46,7 +46,7 @@
   </ThingSetMakerDef>
 
 
-  <ThingSetMakerDef>
+ <ThingSetMakerDef>
     <defName>MapGen_DefaultStockpile3</defName>
     <debugParams>
       <countRange>
@@ -59,7 +59,7 @@
       </totalMarketValueRange>
     </debugParams>
     <root Class="ThingSetMaker_RandomOption">
-	      <fixedParams>
+	  <fixedParams>
         <qualityGenerator>Reward</qualityGenerator>
       </fixedParams>
       <options>
@@ -93,7 +93,7 @@
           </thingSetMaker>
         </li>
         <li>
-          <weight>1</weight>
+          <weight>0.5</weight>
           <thingSetMaker Class="ThingSetMaker_MarketValue">
             <fixedParams>
               <maxThingMarketValue>3000</maxThingMarketValue>
@@ -151,17 +151,21 @@
                 <thingDefs>
                   <li>Apparel_PowerArmor</li>
                   <li>Apparel_PlateArmor</li>
-                  <li>Apparel_ShieldBelt</li>				  
+                  <li>Apparel_ShieldBelt</li>
+				  <li>Apparel_ArmorRecon</li>	
+				  <li>Apparel_PowerArmorHelmet</li>
+				  <li>Apparel_ArmorHelmetRecon</li>		
 	              </thingDefs>
 	              <categories>
                   <li>Weapons</li>
                   <li>BuildingsArt</li>
-                  <li>BodyPartsArtificial</li>
+                  <li>BodyPartsBionic</li>
                 </categories>
               </filter>
             </fixedParams>
           </thingSetMaker>
-        </li>
+		</li>
+				
       </options>
     </root>
   </ThingSetMakerDef>
@@ -331,6 +335,7 @@
               <filter>
 	              <categories>
                   <li>BodyPartsNatural</li>
+				  <li>BodyPartsProsthetic</li>
                 </categories>
               </filter>
             </fixedParams>

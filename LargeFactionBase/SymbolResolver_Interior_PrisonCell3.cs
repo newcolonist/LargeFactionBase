@@ -48,6 +48,6 @@ namespace RimWorld.BaseGen
                 BaseGen.symbolStack.Push("corpse", rp);
             }*/
 
-        }
-    }
+}
+}
 }

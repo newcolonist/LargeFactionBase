@@ -40,7 +40,7 @@
       </li>
     </resolvers>
   </RuleDef>
-  
+   
   <RuleDef>
     <defName>Stockpile2</defName>
     <symbol>stockpile2</symbol>
@@ -48,15 +48,15 @@
       <li Class="LargeFactionBase.SymbolResolver_Stockpile2" />
     </resolvers>
   </RuleDef>
-  
+	
     <RuleDef>
     <defName>Interior_Storage2</defName>
     <symbol>interior_storage2</symbol>
     <resolvers>
       <li Class="LargeFactionBase.SymbolResolver_Interior_Storage2" />
     </resolvers>
-	
   </RuleDef>
+  
   <RuleDef>
     <defName>EdgeShields2</defName>
     <symbol>edgeShields2</symbol>
@@ -101,6 +101,16 @@
     <symbol>edgeSpikes</symbol>
     <resolvers>
       <li Class="LargeFactionBase.SymbolResolver_EdgeSpikes">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  
+       <RuleDef>
+    <defName>EdgeSpikes2</defName>
+    <symbol>edgeSpikes2</symbol>
+    <resolvers>
+      <li Class="LargeFactionBase.SymbolResolver_EdgeSpikes2">
         <minRectSize>(2, 2)</minRectSize>
       </li>
     </resolvers>
@@ -360,11 +370,38 @@
     </resolvers>
   </RuleDef>
   
+       <RuleDef>
+    <defName>MiniT</defName>
+    <symbol>miniT</symbol>
+    <resolvers>
+      <li Class="SymbolResolver_MiniT" />
+    </resolvers>
+  </RuleDef>
+  
+         <RuleDef>
+    <defName>PrisonDefense</defName>
+    <symbol>prisonDefense</symbol>
+    <resolvers>
+      <li Class="SymbolResolver_PrisonDefense" />
+    </resolvers>
+  </RuleDef>
+  
     <RuleDef>
     <defName>FillWithMedBeds</defName>
     <symbol>fillWithMedBeds</symbol>
     <resolvers>
       <li Class="SymbolResolver_FillWithMedBeds" />
+    </resolvers>
+  </RuleDef>
+  
+  	    <RuleDef>
+    <defName>Storage2</defName>
+    <symbol>storage2</symbol>
+    <resolvers>
+      <li Class="SymbolResolver_GenericRoom">
+        <minRectSize>(3, 3)</minRectSize>
+        <interior>interior_storage2</interior>
+      </li>
     </resolvers>
   </RuleDef>
   

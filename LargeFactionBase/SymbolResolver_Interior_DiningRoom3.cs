@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -21,6 +22,7 @@ namespace RimWorld.BaseGen
                 resolveParams.singleThingDef = ThingDefOf.Table2x2c;
                 BaseGen.symbolStack.Push("thing", resolveParams);
             }
+
         }
     }
 }

@@ -2,12 +2,9 @@
 
 namespace RimWorld.BaseGen
 {
-    public class SymbolResolver_BasePart_Indoors_Leaf_DiningRoom2 : SymbolResolver
+    public class SymbolResolver_BasePart_Indoors_Leaf_Storage2 : SymbolResolver
     {
-        /*public override bool CanResolve(ResolveParams rp)
-        {
-            return base.CanResolve(rp) && BaseGen.globalSettings.basePart_barracksResolved >= BaseGen.globalSettings.minBarracks;
-        }*/ //2021-07-15
+        //private const float MaxCoverage = 0.08f;
 
         public override bool CanResolve(ResolveParams rp)
         {
@@ -32,7 +29,8 @@ namespace RimWorld.BaseGen
 
         public override void Resolve(ResolveParams rp)
         {
-            BaseGen.symbolStack.Push("diningRoom2", rp);
+            BaseGen.symbolStack.Push("storage2", rp);
         }
+
     }
 }

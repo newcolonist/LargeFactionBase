@@ -101,6 +101,10 @@ namespace LargeFactionBase
 
             BaseGen.symbolStack.Push("settlement2", resolveParams);
 
+            //BaseGen.symbolStack.Push("corpse2", resolveParams);
+
+            //BaseGen.symbolStack.Push("corpse3", resolveParams);
+
             /*ResolveParams corpsesEverywhere = resolveParams;
             //corpsesEverywhere.rect = dragonRoomRect.ContractedBy(1);
             corpsesEverywhere.hivesCount = Rand.Range(12, 18);
