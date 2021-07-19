@@ -377,6 +377,14 @@
       <li Class="SymbolResolver_MiniT" />
     </resolvers>
   </RuleDef>
+
+       <RuleDef>
+    <defName>MiniF</defName>
+    <symbol>miniF</symbol>
+    <resolvers>
+      <li Class="SymbolResolver_MiniF" />
+    </resolvers>
+  </RuleDef>
   
          <RuleDef>
     <defName>PrisonDefense</defName>
@@ -385,6 +393,15 @@
       <li Class="SymbolResolver_PrisonDefense" />
     </resolvers>
   </RuleDef>
+  
+           <RuleDef>
+    <defName>PrisonFilth</defName>
+    <symbol>prisonFilth</symbol>
+    <resolvers>
+      <li Class="SymbolResolver_PrisonFilth" />
+    </resolvers>
+  </RuleDef>
+  
   
     <RuleDef>
     <defName>FillWithMedBeds</defName>

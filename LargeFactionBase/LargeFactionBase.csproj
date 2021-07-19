@@ -341,9 +341,11 @@
     <Compile Include="SymbolResolver_MedicalBed.cs" />
     <Compile Include="SymbolResolver_MedicalPrisonerBed.cs" />
     <Compile Include="SymbolResolver_BasePart_Indoors_Leaf_Hospital.cs" />
+    <Compile Include="SymbolResolver_MiniF.cs" />
     <Compile Include="SymbolResolver_MiniT.cs" />
     <Compile Include="SymbolResolver_PlaceHumanLeatherArmchair.cs" />
     <Compile Include="SymbolResolver_PrisonDefense.cs" />
+    <Compile Include="SymbolResolver_PrisonFilth.cs" />
     <Compile Include="SymbolResolver_RandomlyPlaceDrugOnTable.cs" />
     <Compile Include="SymbolResolver_RandomlyPlaceHumanMeat.cs" />
     <Compile Include="SymbolResolver_RandomlyPlaceJointOnTables.cs" />

@@ -27,27 +27,32 @@ namespace RimWorld.BaseGen
             {
                 BaseGen.symbolStack.Push("prisonerBed", rp);
             }
+            BaseGen.symbolStack.Push("prisonFilth", rp);
+
             if (Rand.Value > 0.5f)
             {
                 BaseGen.symbolStack.Push("prisonerBed", rp);
             }
 
-            /*BaseGen.symbolStack.Push("corpse", rp);
-            BaseGen.symbolStack.Push("corpse", rp);
-            BaseGen.symbolStack.Push("corpse", rp);
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse", rp);
-            }
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse", rp);
-            }
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse", rp);
-            }*/
+            BaseGen.symbolStack.Push("prisonFilth", rp);
+            BaseGen.symbolStack.Push("prisonFilth", rp);
 
-}
-}
+            }
+                /*BaseGen.symbolStack.Push("corpse", rp);
+                BaseGen.symbolStack.Push("corpse", rp);
+                BaseGen.symbolStack.Push("corpse", rp);
+                if (Rand.Value > 0.5f)
+                {
+                    BaseGen.symbolStack.Push("corpse", rp);
+                }
+                if (Rand.Value > 0.5f)
+                {
+                    BaseGen.symbolStack.Push("corpse", rp);
+                }
+                if (Rand.Value > 0.5f)
+                {
+                    BaseGen.symbolStack.Push("corpse", rp);
+                }*/
+
+            }
 }

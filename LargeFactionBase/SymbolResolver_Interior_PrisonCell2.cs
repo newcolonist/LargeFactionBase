@@ -20,6 +20,7 @@ namespace RimWorld.BaseGen
             resolveParams.thingSetMakerParams = new ThingSetMakerParams?(value);
             resolveParams.innerStockpileSize = new int?(3);
             BaseGen.symbolStack.Push("innerStockpile", resolveParams);
+
             BaseGen.symbolStack.Push("indoorLighting", rp);
             InteriorSymbolResolverUtility.PushBedroomHeatersCoolersAndLightSourcesSymbols(rp, false);
             BaseGen.symbolStack.Push("medicalPrisonerBed", rp);
@@ -31,31 +32,12 @@ namespace RimWorld.BaseGen
             {
                 BaseGen.symbolStack.Push("medicalPrisonerBed", rp);
             }
+            BaseGen.symbolStack.Push("prisonDefense", rp);
             if (Rand.Value > 0.5f)
             {
                 BaseGen.symbolStack.Push("medicalPrisonerBed", rp);
             }
-
-            /*BaseGen.symbolStack.Push("corpse2", rp);
-            BaseGen.symbolStack.Push("corpse2", rp);
-            BaseGen.symbolStack.Push("corpse2", rp);
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse2", rp);
-            }
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse2", rp);
-            }
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse2", rp);
-            }*/
             BaseGen.symbolStack.Push("prisonDefense", rp);
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("prisonDefense", rp);
-            }
             if (Rand.Value > 0.5f)
             {
                 BaseGen.symbolStack.Push("prisonDefense", rp);

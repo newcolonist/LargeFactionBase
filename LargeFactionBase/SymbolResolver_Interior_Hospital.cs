@@ -13,7 +13,7 @@ namespace RimWorld.BaseGen
 
         public override void Resolve(ResolveParams rp)
         {
-            List<Thing> list = (rp.faction != null && rp.faction.def.techLevel.IsNeolithicOrWorse()) ? LargeFactionBase.LargeFactionBase_ThingSetMakerDefOf.MapGen_TribalHospitalStockpile.root.Generate():
+            List<Thing> list = (rp.faction != null && rp.faction.def.techLevel.IsNeolithicOrWorse()) ? LargeFactionBase.LargeFactionBase_ThingSetMakerDefOf.MapGen_TribalHospitalStockpile.root.Generate() :
                 LargeFactionBase.LargeFactionBase_ThingSetMakerDefOf.MapGen_HospitalStockpile.root.Generate();
             for (int i = 0; i < list.Count; i++)
             {
@@ -21,7 +21,7 @@ namespace RimWorld.BaseGen
                 resolveParams.singleThingToSpawn = list[i];
                 BaseGen.symbolStack.Push("thing", resolveParams);
             }
-
+            
             BaseGen.symbolStack.Push("indoorLighting", rp);
             BaseGen.symbolStack.Push("indoorLighting", rp);
 
@@ -35,22 +35,6 @@ namespace RimWorld.BaseGen
             {
                 BaseGen.symbolStack.Push("medicalBed", rp);
             }
-
-            /*BaseGen.symbolStack.Push("corpse3", rp);
-            BaseGen.symbolStack.Push("corpse3", rp);
-            BaseGen.symbolStack.Push("corpse3", rp);
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse3", rp);
-            }
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse3", rp);
-            }
-            if (Rand.Value > 0.5f)
-            {
-                BaseGen.symbolStack.Push("corpse3", rp);
-            }*/
 
             if (rp.faction.def.techLevel <= TechLevel.Medieval)
             {

@@ -223,13 +223,23 @@
           </thingSetMaker>
         </li>
         <li>
-          <chance>0.75</chance>
+          <chance>0.55</chance>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
-              <qualityGenerator>Reward</qualityGenerator>
               <filter>
                 <thingDefs>
                   <li>MechSerumHealer</li>
+                </thingDefs>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		        <li>
+          <chance>0.20</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
                   <li>MechSerumResurrector</li>
                 </thingDefs>
               </filter>
@@ -277,13 +287,23 @@
           </thingSetMaker>
         </li>
         <li>
-          <chance>0.75</chance>
+          <chance>0.55</chance>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
-              <qualityGenerator>Reward</qualityGenerator>
               <filter>
                 <thingDefs>
                   <li>MechSerumHealer</li>
+                </thingDefs>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		        <li>
+          <chance>0.2</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
                   <li>MechSerumResurrector</li>
                 </thingDefs>
               </filter>

@@ -25,7 +25,7 @@ namespace LargeFactionBase
                 int num = rp.rect.Cells.Count((IntVec3 x) => x.Standable(map) && x.GetFirstItem(map) == null);
                 parms = default(ThingSetMakerParams);
                 parms.countRange = new IntRange?(new IntRange(num, num));
-                //parms.techLevel = new TechLevel?((rp.faction == null) ? TechLevel.Undefined : rp.faction.def.techLevel);
+                parms.techLevel = new TechLevel?((rp.faction == null) ? TechLevel.Undefined : rp.faction.def.techLevel);
             }
             List<Thing> list = thingSetMakerDef.root.Generate(parms);
 

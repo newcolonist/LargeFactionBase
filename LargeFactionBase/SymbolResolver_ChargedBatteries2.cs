@@ -29,7 +29,7 @@ namespace RimWorld.BaseGen
             }
             for (int j = 0; j < SymbolResolver_ChargeBatteries2.batteries.Count; j++)
             {
-                float num = Rand.Range(0.8f, 0.9f);
+                float num = Rand.Range(0.6f, 0.95f);
                 SymbolResolver_ChargeBatteries2.batteries[j].SetStoredEnergyPct(Mathf.Min(SymbolResolver_ChargeBatteries2.batteries[j].StoredEnergyPct + num, 1f));
             }
             SymbolResolver_ChargeBatteries2.batteries.Clear();

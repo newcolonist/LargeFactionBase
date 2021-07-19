@@ -5,17 +5,34 @@
     <defName>BasePart_Indoors_Leaf</defName>
     <symbol>basePart_indoors_leaf</symbol>
     <resolvers>
+	  	        <li Class="SymbolResolver_BasePart_Indoors_Leaf_Barracks">
+        <minRectSize>(3, 3)</minRectSize>
+        <selectionWeight>1</selectionWeight>
+      </li>
 	  
-		  <li Class="SymbolResolver_BasePart_Indoors_Leaf_Storage">
-			<minRectSize>(3, 3)</minRectSize>
-			<selectionWeight>0.2</selectionWeight>
-		  </li>
+      <li Class="SymbolResolver_BasePart_Indoors_Leaf_WorshippedTerminal">
+        <minRectSize>(5, 7)</minRectSize>
+        <selectionWeight>1.25</selectionWeight>
+      </li>
+	  
+      <li Class="SymbolResolver_BasePart_Indoors_Leaf_Brewery">
+        <minRectSize>(4, 4)</minRectSize>
+        <selectionWeight>0.7</selectionWeight>
+      </li>
+	
+	      <li Class="SymbolResolver_BasePart_Indoors_Leaf_ThroneRoom" MayRequire="Ludeon.RimWorld.Royalty">
+        <minRectSize>(3, 3)</minRectSize>
+      </li>
 		 
 		  <li Class="SymbolResolver_BasePart_Indoors_Leaf_Storage2">
 			<minRectSize>(3, 3)</minRectSize>
-			<selectionWeight>0.6</selectionWeight>
+			<selectionWeight>0.8</selectionWeight>
 		  </li>
-			
+					  <li Class="SymbolResolver_BasePart_Indoors_Leaf_Storage">
+			<minRectSize>(3, 3)</minRectSize>
+			<selectionWeight>0.1</selectionWeight>
+		  </li>
+		  
 		  <li Class="SymbolResolver_BasePart_Indoors_Leaf_Brewery">
 			<minRectSize>(4, 4)</minRectSize>
 			<selectionWeight>0.4</selectionWeight>
@@ -23,11 +40,7 @@
 		  
 		  <li Class="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom3">
 			<minRectSize>(5, 5)</minRectSize>
-			<selectionWeight>0.4</selectionWeight>
-		  </li>
-		  
-		  <li Class="SymbolResolver_BasePart_Indoors_Leaf_BatteryRoom">
-			<minRectSize>(4, 4)</minRectSize>
+			<selectionWeight>0.25</selectionWeight>
 		  </li>
 		  
 		<li Class="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom2">
@@ -37,12 +50,12 @@
 		
 			  <li Class="SymbolResolver_BasePart_Indoors_Leaf_DiningRoom">
 			<minRectSize>(5, 5)</minRectSize>
-			<selectionWeight>0.15</selectionWeight>
+			<selectionWeight>0.1</selectionWeight>
 		  </li>
 		  
 		<li Class="SymbolResolver_BasePart_Indoors_Leaf_BatteryRoom2">
 			<minRectSize>(4, 4)</minRectSize>
-			<selectionWeight>2</selectionWeight>
+			<selectionWeight>1.5</selectionWeight>
 			</li>
 			
 		<li Class="SymbolResolver_BasePart_Indoors_Leaf_PrisonCell2">
@@ -57,9 +70,9 @@
 			
 		<li Class="SymbolResolver_BasePart_Indoors_Leaf_Hospital">
         <minRectSize>(5, 5)</minRectSize>
-        <selectionWeight>0.8</selectionWeight>
+        <selectionWeight>0.5</selectionWeight>
       </li>
-	
+	  
 	  
     </resolvers>
   </RuleDef>
